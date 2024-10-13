@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+
+import React, { useContext } from 'react';
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { AuthProvider, AuthContext } from './components/AuthContext.js';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import AppStack from './components/AppStack';
+import AuthNavigator from './components/AuthNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AuthProvider>
+        {/* Eliminar temporalmente ErrorBoundary */}
+        <NavigationContainer>
+          <StatusBar barStyle="light-content" backgroundColor="#EB0029" />
+          <RootNavigator />
+        </NavigationContainer>
+      </AuthProvider>
+    </GestureHandlerRootView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+function RootNavigator() {
+  const { user } = useContext(AuthContext);
+
+  return user.authenticated ? <AppStack /> : <AuthNavigator />;
+}
