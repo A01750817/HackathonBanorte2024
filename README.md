@@ -21,40 +21,16 @@ react-native-youtube-iframe: Integración de videos de YouTube dentro de la apli
 📂 Estructura del Proyecto
 lua
 Copiar código
-BanorteGoApp/
-├── assets/
-│   ├── banorteLogoSinLetras.png
-│   ├── LibroBlanco.png
-│   ├── userBLanco.png
-│   ├── iconPlayBlanco.png
-│   ├── TrioPersonas.png
-│   ├── maya.png
-│   ├── ...
-├── components/
-│   ├── AppStack.js
-│   ├── AuthContext.js
-│   ├── AuthNavigator.js
-│   ├── AuthStack.js
-│   ├── BottomBar.js
-│   ├── ChatWithAI.js
-│   ├── CoinPath.js
-│   ├── CoinPathStack.js
-│   ├── ErrorBoundary.js
-│   ├── LoginRegister.js
-│   ├── Perfil.js
-│   ├── QAProblems.js
-│   ├── RankingList.js
-│   ├── RankingsAndChat.js
-│   ├── SeccionVideo.js
-│   ├── TabNavigator.js
-│   ├── TopBar.js
-│   ├── VideosSeccion.js
-│   ├── ...
-├── App.js
-├── package.json
-├── tsconfig.json
-├── babel.config.js
-├── ...
+
+
+
+
+
+<img width="147" alt="image" src="https://github.com/user-attachments/assets/18a1c7f2-bc8b-4aa6-b0fd-7328ceab93ff">
+
+
+
+
 🛠️ Instalación
 Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 
