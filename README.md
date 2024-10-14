@@ -117,7 +117,7 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 ## 📞 Contacto
 	Para cualquier consulta o comentario, por favor contacta a:
 
-	Ivan Pérez
+	Ivan Alexander Ramos 
 	Correo electrónico: ivan_ramost@outlook.com
 	GitHub: A01750817
 
